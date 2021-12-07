@@ -1,29 +1,44 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { Home } from './componentes/Home';
+import { Login } from './componentes/Login';
+import { Registrarse } from './componentes/Registrarse';
+import { HomeusuarioInt } from './componentes/HomeusuarioInt';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+
 function App() {
   return (
-   
-   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-   <a class="navbar-brand js-scroll-trigger" href="#page-top">
-       <span class="d-block d-lg-none">LABORATORIO CLÍNICO</span>
-       <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="%PUBLIC_URL%/assets/img/lab.jpg" alt="" /></span>
-   </a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-       <ul class="navbar-nav">
-           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#inicio">Inicio</a></li>
-           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#nosotros">Nuestra empresa</a></li>
-           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contacto">Contacto</a></li>
-           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#agenda">Programa tu cita</a></li>
-           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#descarga">Descarga de resultados</a></li>
-           
-       </ul>
-    </div>
-  </nav>
-  
+    <><>
+      {/* Componente principal */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Registrarse" element={<Registrarse />} />
+          <Route path="/HomeUsuarioint" element={<HomeusuarioInt />} />
+
+        </Routes>
+      </BrowserRouter>
+
+    </><nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a className="navbar-brand js-scroll-trigger" href="#page-top">
+          <span className="d-block d-lg-none">LABORATORIO ALIANZA</span>
+          <span className="d-none d-lg-block"><img className="img-fluid img-profile rounded-circle mx-auto mb-2" src="%PUBLIC_URL%/assets/img/lab.jpg" alt="" /></span>
+        </a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav">
+            <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#inicio">Inicio</a></li>
+            <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#nosotros">Sobre nosotros</a></li>
+            <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#servicios">Nuestros servicios</a></li>
+            <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#contacto">Contáctenos</a></li>
+
+          </ul>
+        </div>
+      </nav></>
+  );
  
-    );
   }
 
   export default App;
