@@ -1,27 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 
-import { Home } from './componentes/Home';
-import { Login } from './componentes/Login';
-import { Registrarse } from './componentes/Registrarse';
-import { HomeusuarioInt } from './componentes/HomeusuarioInt';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 function App() {
   return (
-    <><>
-      {/* Componente principal */}
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Login" element={<Login />} />
-          <Route path="/Registrarse" element={<Registrarse />} />
-          <Route path="/HomeUsuarioint" element={<HomeusuarioInt />} />
-
-        </Routes>
-      </BrowserRouter>
-
-    </><nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a className="navbar-brand js-scroll-trigger" href="#page-top">
           <span className="d-block d-lg-none">LABORATORIO ALIANZA</span>
           <span className="d-none d-lg-block"><img className="img-fluid img-profile rounded-circle mx-auto mb-2" src="%PUBLIC_URL%/assets/img/lab.jpg" alt="" /></span>
@@ -36,7 +19,7 @@ function App() {
 
           </ul>
         </div>
-      </nav></>
+      </nav>
   );
  
   }
