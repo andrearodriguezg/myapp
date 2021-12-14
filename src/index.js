@@ -12,7 +12,7 @@ import { Agendaint } from './componentes/Agendaint';
 import { Resultadospacientes } from './componentes/Resultadospacientes';
 import { Cerrarsesion } from './componentes/Cerrarsesion';
 import { HomeUsuarioext } from './componentes/Homeusuarioext';
-import { Mismensajes } from './Mismensajes';
+import { Mismensajes } from './componentes/Mismensajes';
 import { Misresultados } from './componentes/Misresultados';
 import { Homeadmin } from './componentes/Homeadmin';
 import { Home } from './componentes/Home';
